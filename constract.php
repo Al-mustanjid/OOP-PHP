@@ -1,6 +1,7 @@
 <?php
 /*onstructor: constructor is a codeblock which executes automatically during object creation
 it is written by double underscore __ before constructor name
+it provides code reusability
 */
 
 class MyClass{
