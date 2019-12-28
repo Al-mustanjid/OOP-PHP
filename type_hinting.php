@@ -24,10 +24,21 @@ class Teacher extends DepartmentInfo{
 
     //Adding an object as parameter in function
     function get_tecaher(DepartmentInfo $dept){
-        echo $this->teacher_name." is a teacher of ".$dept->name." department";
+        echo $this->teacher_name." is a teacher of ".$dept->name." department"."<br/>";
     }
+    //we can also do this work by this keywor "instanceof"
+    //Actually it is used as condition checker
+    function get_tecaher_2(DepartmentInfo $dept){
+        if($dept instanceof DepartmentInfo)
+        echo $this->teacher_name." is a teacher of ".$dept->name." department"."<br/>";
+        else
+        echo "It is not department object";
+        }
 }
 
 $obj = new DepartmentInfo("1","CSE");
+$obj1 = new DepartmentInfo("2","SE");
 $obj2 = new Teacher("Kodu");
 $obj2->get_tecaher($obj); //initializing department object
+$obj2->get_tecaher_2($obj1);
+?>
