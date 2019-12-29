@@ -1,6 +1,7 @@
 <?php
 /* when a simmilar method of parent class is also declared in child class 
 then php executes the method of child class not parent class
+This is also called ploymorphism. The way to use same method for diffrenet purposes in different classes.
 **but we can call it by scope with parent keyword
 */
 
