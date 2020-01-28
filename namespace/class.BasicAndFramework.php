@@ -1,6 +1,6 @@
 <?php
 /* we can also keep multiple namespaces in a file
-    but this time it have to keep between {}
+    but this time it must keep between {}
 */
 namespace BasicTutorial {
 class Tutorial{
